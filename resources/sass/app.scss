@@ -1,0 +1,37 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.card {
+    max-width: 1024px;
+    margin: 15px auto;
+    padding: 0px;
+    .card-header {
+        display: flex;
+        .card-header-right {
+            margin-left: auto;
+        }
+        .card-header-left {
+            margin-right: auto;
+        }
+    }
+        
+    @media (max-width: 574px) { 
+        margin: 0px auto;
+        border: none;
+        background-color: transparent;
+        .card-header {
+            padding: 10px;
+            background-color: transparent;
+            border: none;
+            
+
+        }
+    }
+}
